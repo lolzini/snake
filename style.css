@@ -1,0 +1,75 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+#ui {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game {
+  display: flex;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.snake {
+  background-color: green;
+}
+
+.head {
+  background-color: rgb(0, 104, 0);
+}
+
+.food {
+  background-color: red;
+}
+
+#game-over {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#game-over button {
+  background-color: #6200ea; /* Primary color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Font weight */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+#game-over button:hover {
+  background-color: #3700b3; /* Darker shade for hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+#game-over button:active {
+  background-color: #1a00b3; /* Even darker shade for active state */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Reduced shadow */
+  transform: translateY(2px); /* Slightly push button down */
+}
+
+#game-over button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 3px rgba(98, 0, 234, 0.5); /* Custom focus ring */
+}
+
+#game-over.not-active {
+  display: none;
+}

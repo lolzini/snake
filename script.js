@@ -8,8 +8,8 @@ const DIRECTIONS = {
 const game = document.body.querySelector("#game");
 const gameOverUi = document.querySelector("#game-over");
 const button = document.querySelector("#game-over button");
-const ROWS = 3;
-const COLS = 3;
+const ROWS = 4;
+const COLS = 4;
 const TICK_FREQ = 200;
 
 let snakeBody = [];
